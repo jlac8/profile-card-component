@@ -3,7 +3,7 @@ import SocialMediaInfo from "./SocialMediaInfo"
 
 function ProfileCard() {
   return (
-    <section>
+    <section className="profile-card">
       <DemographicInfo/>
       <SocialMediaInfo/>
     </section>
