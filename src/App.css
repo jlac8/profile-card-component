@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
 
 :root {
-  --primary-red: hsl(1, 90%, 64%);
-  --primary-blue: hsl(219, 85%, 26%);
+  --bg-color: #19a1ad ;
   --neutral-white: hsl(0, 0%, 100%);
   --neutral-light-grayish-blue: hsl(210, 60%, 98%);
   --neutral-light-grayish-blue1: hsl(211, 68%, 94%);
@@ -12,6 +11,84 @@
   --neutral-very-dark-blue: hsl(224, 21%, 14%);
   --font-size: 18px;
   --weight1: 700;
-  --weight2: 700;
+  --weight2: 400;
   --family: "Kumbh Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: var(--family);
+  font-size: var(--font-size);
+  font-weight: var(--weight2);
+  color: var(--neutral-dark-grayish-blue);
+}
+
+.profile-card {
+  width: 320px;
+  background-color: var(--neutral-white);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card__demographic {
+  background-image: url(../public/assets/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card__picture {
+  border-radius: 50%;
+  margin-top: 96px;
+  border: 6px solid var(--neutral-white);
+}
+
+.profile-card__name {
+  color: var(--neutral-very-dark-blue);
+  font-weight: var(--weight1);
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.profile-card__city {
+  margin-top: -10px;
+  font-size: 15px;
+}
+
+.profile-card__social-media {
+  margin-top: 10px;
+  border-top: 1px solid var(--neutral-light-grayish-blue2);
+  display: flex;
+  justify-content: space-around;
+  padding: 25px;
+}
+
+.profile-card__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.profile-card__stat-number {
+  color: var(--neutral-very-dark-blue);
+  font-weight: var(--weight1);
+  font-size: var(--font-size);
+  margin-bottom: 4px;
+}
+
+.profile-card__stat-type {
+  font-size: 12px;
+}
+
+@media (min-width: 400px) {
+  .profile-card {
+    width: 350px;
+  }
 }
