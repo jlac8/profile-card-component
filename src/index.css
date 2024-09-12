@@ -3,4 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: var(--bg-color);
+  background-image: url(..\public\assets\bg-pattern-top.svg), url(..\public\assets\bg-pattern-bottom.svg);
+  background-position: calc(-978px + 52vw) -489px, 52vw calc(100vh - 489px);
+  background-repeat: no-repeat;
 }
